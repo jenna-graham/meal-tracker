@@ -4,6 +4,7 @@ import { renderIngredient } from './utils.js';
 const ingredientForm = document.getElementById('ingredient-form');
 const ingredientsList = document.getElementById('ingredients-list');
 const form = document.getElementById('ingredient-form');
+const save = document.getElementById('save-recipe');
 
 const remove = document.getElementById('remove-button');
 // let state
@@ -43,3 +44,5 @@ remove.addEventListener('click', () => {
     displayIngredients();
 
 });
+
+save.addEventListener('click')

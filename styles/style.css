@@ -77,7 +77,13 @@ header img {
 }
 
 p {
-    margin: var(--gutter);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
   
 footer {
