@@ -1,4 +1,4 @@
-import { renderIngredient } from './utils';
+import { renderIngredient } from './utils.js';
 
 // import functions and grab DOM elements
 const ingredientForm = document.getElementById('ingredient-form');
