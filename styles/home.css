@@ -6,20 +6,25 @@
  flex-direction: column;
 } */
 
-/* section.add-ingredients {
-    display: flex;
-    flex-direction: column;
-} */
+section.add-ingredients {
+  
+  display: flex;
+  flex-direction: row;
+} 
 
 
 #ingredient-form {
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-    padding-right: 200px;
-    padding-bottom: 50px;
+    padding-right: 200px; 
+    padding-bottom: 20px;
     
 }
+#ingredients-list {
+    padding-right: 200px;
+}
 li {
-    justify-items: flex-end;
+
+    
 }
