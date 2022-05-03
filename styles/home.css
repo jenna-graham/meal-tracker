@@ -1,1 +1,22 @@
 /* add home page styles here */
+
+
+/* #ingredients {
+ display: flex;
+ flex-direction: column;
+} */
+
+/* section.add-ingredients {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+#ingredient-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    
+}
