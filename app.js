@@ -3,6 +3,7 @@ import { renderIngredient } from './utils.js';
 // import functions and grab DOM elements
 const ingredientForm = document.getElementById('ingredient-form');
 const ingredientsList = document.getElementById('ingredients-list');
+const form = document.getElementById('ingredient-form');
 
 const remove = document.getElementById('remove-button');
 // let state
@@ -14,8 +15,6 @@ function displayIngredients() {
         const li = renderIngredient(ingredient);
         ingredientsList.append(li);
     }
-
-
 }
 
 // set event listeners 
@@ -35,8 +34,8 @@ ingredientForm.addEventListener('submit', (e) => {
     console.log('list of ingredients', ingredients);
 
     displayIngredients();
-
-  
+    form.reset();
+ 
 });
 
 remove.addEventListener('click', () => {
