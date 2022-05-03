@@ -26,7 +26,7 @@
             <form id = "ingredient-form">
                 <label for="food-name">
                     Ingredient:
-                    <input name="food-name" />
+                    <input name="name" />
                     </label>
                 </label> 
                 <label for="quantity">
@@ -43,12 +43,14 @@
                         <option value="Tablespoons">Tablespoons</option>
                     </select>
                 </label> 
-                <button id="button">Add Ingredient </button>
+                <button id="add-button">Add Ingredient </button>
             </form>
-            <button>Remove last Item</button>
-        
-        
-
+            
+            <div class="ingredients-list">
+                <ul id="ingredients-list"></ul>
+                <button id="remove-button">Remove last Item</button>
+            </div>
+                
         </section>
     </main>
     <footer>
