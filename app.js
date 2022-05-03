@@ -4,11 +4,13 @@ import { renderIngredient } from './utils.js';
 const ingredientForm = document.getElementById('ingredient-form');
 const ingredientsList = document.getElementById('ingredients-list');
 const form = document.getElementById('ingredient-form');
+const userInput = document.getElementById('recipe-name');
 const save = document.getElementById('save-recipe');
 
 const remove = document.getElementById('remove-button');
 // let state
 let ingredients = [];
+let users = [];
 
 function displayIngredients() {
     ingredientsList.textContent = '';
@@ -45,4 +47,16 @@ remove.addEventListener('click', () => {
 
 });
 
-save.addEventListener('click')
+save.addEventListener('click', () => {
+
+    const meal = {
+        name: userInput.value,
+        ingredientCount: ingredients.length,
+    
+    };
+    users.push(meal);
+    ingredients = [];
+
+    
+
+});
