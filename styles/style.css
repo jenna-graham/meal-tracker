@@ -46,8 +46,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
+    /* padding-top: var(--gutter);
+    padding-bottom: var(--gutter); */
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px black;
@@ -77,13 +77,13 @@ header img {
 }
 
 p {
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    border: solid 2px black;
 }
   
 footer {

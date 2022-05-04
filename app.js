@@ -1,4 +1,5 @@
 import { renderIngredient } from './utils.js';
+import { renderMeal } from './utils.js';
 
 // import functions and grab DOM elements
 const ingredientForm = document.getElementById('ingredient-form');
@@ -6,11 +7,12 @@ const ingredientsList = document.getElementById('ingredients-list');
 const form = document.getElementById('ingredient-form');
 const userInput = document.getElementById('recipe-name');
 const save = document.getElementById('save-recipe');
+const mealList = document.getElementById('meal-list');
 
 const remove = document.getElementById('remove-button');
 // let state
 let ingredients = [];
-let users = [];
+let meals = [];
 
 function displayIngredients() {
     ingredientsList.textContent = '';
@@ -19,7 +21,14 @@ function displayIngredients() {
         ingredientsList.append(li);
     }
 }
-
+function displayMeals() {
+    userInput.value = '';
+    mealList.textContent = '';
+    for (let meal of meals) {
+        const li = renderMeal(meal);
+        mealList.append(li);
+    } 
+}
 // set event listeners 
 ingredientForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -52,11 +61,11 @@ save.addEventListener('click', () => {
     const meal = {
         name: userInput.value,
         ingredientCount: ingredients.length,
-    
     };
-    users.push(meal);
-    ingredients = [];
+    meals.push(meal);
+    displayMeals();
 
-    
+    ingredients = [];
+    displayIngredients();
 
 });
