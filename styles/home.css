@@ -1,1 +1,79 @@
 /* add home page styles here */
+
+
+/* #ingredients {
+ display: flex;
+ flex-direction: column;
+} */
+
+section.add-ingredients {
+  
+  display: flex;
+  flex-direction: row;
+  padding-right: 100px;
+  margin-bottom: 10px;
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+} 
+
+
+#ingredient-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 200px; 
+    padding-bottom: 20px;
+    
+}
+#ingredients-list {
+    font-size: .8em;
+    
+}
+
+#save {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+}
+
+#label {
+    font-size: .65em;
+    padding-bottom: 20px;
+    font-weight: bold;
+    
+}
+#save-recipe {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+#meal-list {
+    padding: 20px;
+    font-size: .8em;
+    font-weight: bold;
+
+}
+h2 {
+    border: solid 2px black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#head-style {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.meals {
+    /* padding-top: var(--gutter); */
+    padding-bottom: var(--gutter);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+section#save {
+    margin-bottom: 10px;
+}
+li {
+    color: brown;
+}
